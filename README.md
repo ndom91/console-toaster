@@ -1,64 +1,30 @@
-# 🍞 Console Toaster
+# console-toaster
 
-Tiny library to get your `console.logs` on screen!
+> Toastify your console.logs!
 
-Bonus: clicking on the toast will launch a google search of your error message 🎉
+[![NPM](https://img.shields.io/npm/v/console-toaster.svg)](https://www.npmjs.com/package/console-toaster) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## 📣 Usage
+## Install
 
-1. Install
-
-`npm i console-toaster`
-
-2. Import
-
-`import Toaster from 'console-toaster'`
-
-3. Call the function somewhere in App
-
+```bash
+npm install --save console-toaster
 ```
-import React from 'react'
-import Toaster from 'console-toaster'
 
-const App = () => {
-  Toaster()
+## Usage
 
-  return (
-    <div className='wrapper'>
-      <section>
-        <App />
-      </section>
-    </div>
-  )
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'console-toaster'
+import 'console-toaster/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
 }
-
-export default App
-```
-
-4. Profit!
-
-## 🏗️ Options
-
-| Props | Type | Default Value | Required
-| --- | --- | --- | --- |
-| position | enum('bottom', 'top') | 'bottom' | No |
-| duration | number | 4000 | No |
-| destination | string | 'https://google.com/search?q=' | No |
-| className | string | '' | No |
-
-
-#### Example
-```
-const options = {
-  position: 'bottom',
-  duration: '4000',
-  destination: 'https://bing.com/search?q=',
-  className = 'my-toast-class'
-}
-
-Toaster(options)
 ```
 
 ## License
 
-MIT
+MIT © [ndom91](https://github.com/ndom91)
