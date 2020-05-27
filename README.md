@@ -1,6 +1,8 @@
 # Console Toaster
 
-Tiny library to get your console.logs in a toaster on-screen!:q
+Tiny library to get your `console.logs` on screen!
+
+Bonus: clicking on the toast will launch a google search of your error message ;)
 
 ## Usage
 
