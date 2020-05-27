@@ -1,6 +1,6 @@
 {
   "name": "console-toaster",
-  "version": "1.0.0",
+  "version": "0.1.5",
   "description": "Toastify your console.logs!",
   "author": "ndom91",
   "license": "MIT",
