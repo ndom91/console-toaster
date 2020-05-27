@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
 import Popover from 'react-tiny-popover'
-import localforage from 'localforage'
 import * as S from './styled'
-
 
 const Toaster = ({
   position = 'bottom',

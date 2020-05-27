@@ -1,30 +1,58 @@
-# console-toaster
+# 🍞 console-toaster
 
 > Toastify your console.logs!
 
 [![NPM](https://img.shields.io/npm/v/console-toaster.svg)](https://www.npmjs.com/package/console-toaster) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+Tiny heads-up display which will show your `console.log` and `console.error` messages in toasts on your screen. 
+
+In addition, you get a counter of the two in the bottom left. Clicking on either will show you a history of log lines. 
+
+Clicking on a log toast itself will launch a google search of that error message.
+
+## 🚀 Install
 
 ```bash
 npm install --save console-toaster
 ```
 
-## Usage
+## 📋 Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import Container from 'rest-of-app'
+import Toaster from 'console-toaster'
 
-import MyComponent from 'console-toaster'
-import 'console-toaster/dist/index.css'
-
-class Example extends Component {
+const App = props => {
   render() {
-    return <MyComponent />
+    return (
+      <div>
+        <Toaster />
+        <Container />
+      </div>
   }
 }
 ```
 
-## License
+This will get you a little heads up menu on the left, and your `console.log()` and `console.error()` calls in toast messages along the right. Don't worry, they'll still show up in your console as well.
 
-MIT © [ndom91](https://github.com/ndom91)
+![Screenshot1](https://i.imgur.com/3J11pp3.png)
+
+Clicking on either `log` or `error` will display the latest log entries
+
+![Screenshot2](https://i.imgur.com/w7gJvGi.png)
+
+## 🗄 Props
+
+```jsx
+<Toaster
+  position={'bottom' || 'top'}
+  duration={4000}
+  destination={`https://google.com/search?q${error}`}
+  className={''}
+/>
+```
+
+## 📖 License
+
+MIT
