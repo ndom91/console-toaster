@@ -1,3 +1,61 @@
 # Console Toaster
 
 Tiny library to get your console.logs in a toaster on-screen!:q
+
+## Usage
+
+1. Install
+
+`npm i console-toaster`
+
+2. Import
+
+`import Logger from 'console-toaster'`
+
+3. Call the function somewhere in App i.e.:
+
+```
+import React from 'react'
+import Logger from 'console-toaster'
+
+const App = () => {
+  Logger()
+
+  return (
+    <div className='wrapper'>
+      <section>
+        <App />
+      </section>
+    </div>
+  )
+}
+
+export default App
+```
+
+4. Profit!
+
+## Options
+
+| Props | Type | Default Value | Required
+| --- | --- | --- | --- |
+| position | enum('bottom', 'top') | 'bottom' | No |
+| duration | number | 4000 | No |
+| destination | string | 'https://google.com/search?q=' | No |
+| className | string | '' | No |
+
+With options:
+```
+const options = {
+  position: 'bottom',
+  duration: '4000',
+  destination: 'https://bing.com/search?q=',
+  className = 'my-toast-class'
+}
+
+Logger(options)
+```
+
+## License
+
+MIT

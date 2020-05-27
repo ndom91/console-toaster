@@ -6,7 +6,7 @@
     "build": "microbundle --compress false",
     "dev": "microbundle watch"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "bin": "dist/main.module.js",
   "main": "dist/main.module.js",
   "description": "Tiny library to put your console.logs in a toast!",
@@ -23,3 +23,4 @@
     "microbundle": "^0.12.0"
   }
 }
+
