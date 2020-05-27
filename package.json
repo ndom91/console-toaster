@@ -1,0 +1,25 @@
+{
+  "name": "console-toaster",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/main.module.js",
+  "unpkg": "dist/main.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "version": "0.0.1",
+  "description": "Tiny library to put your console.logs in a toast!",
+  "keywords": [
+    "console.log",
+    "toast"
+  ],
+  "author": "ndom91 <yo@ndo.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "toastify-js": "^1.7.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.0"
+  }
+}
