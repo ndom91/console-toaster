@@ -1,10 +1,10 @@
 # Console Toaster
 
-Tiny library to get your `console.logs` on screen!
+🍞 Tiny library to get your `console.logs` on screen!
 
-Bonus: clicking on the toast will launch a google search of your error message ;)
+Bonus: clicking on the toast will launch a google search of your error message 🎉
 
-## Usage
+## 📣 Usage
 
 1. Install
 
@@ -14,7 +14,7 @@ Bonus: clicking on the toast will launch a google search of your error message ;
 
 `import Logger from 'console-toaster'`
 
-3. Call the function somewhere in App i.e.:
+3. Call the function somewhere in App
 
 ```
 import React from 'react'
@@ -37,7 +37,7 @@ export default App
 
 4. Profit!
 
-## Options
+## 🏗️ Options
 
 | Props | Type | Default Value | Required
 | --- | --- | --- | --- |
@@ -46,7 +46,8 @@ export default App
 | destination | string | 'https://google.com/search?q=' | No |
 | className | string | '' | No |
 
-With options:
+
+#### Example
 ```
 const options = {
   position: 'bottom',
