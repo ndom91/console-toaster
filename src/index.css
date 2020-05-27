@@ -1,0 +1,25 @@
+.wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  right: 20;
+  bottom: 20;
+}
+
+.console {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.log {
+  border: 2px solid #b9b9b9;
+}
+
+.error {
+  border: 2px solid #ff4242;
+}
+
+.warn {
+  border: 2px solid #ff5722;
+}

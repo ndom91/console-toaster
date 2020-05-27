@@ -1,6 +1,6 @@
-# Console Toaster
+# 🍞 Console Toaster
 
-🍞 Tiny library to get your `console.logs` on screen!
+Tiny library to get your `console.logs` on screen!
 
 Bonus: clicking on the toast will launch a google search of your error message 🎉
 
@@ -12,16 +12,16 @@ Bonus: clicking on the toast will launch a google search of your error message �
 
 2. Import
 
-`import Logger from 'console-toaster'`
+`import Toaster from 'console-toaster'`
 
 3. Call the function somewhere in App
 
 ```
 import React from 'react'
-import Logger from 'console-toaster'
+import Toaster from 'console-toaster'
 
 const App = () => {
-  Logger()
+  Toaster()
 
   return (
     <div className='wrapper'>
@@ -56,7 +56,7 @@ const options = {
   className = 'my-toast-class'
 }
 
-Logger(options)
+Toaster(options)
 ```
 
 ## License
