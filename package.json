@@ -1,14 +1,14 @@
 {
   "name": "console-toaster",
   "source": "src/index.js",
-  "main": "dist/main.js",
   "module": "dist/main.module.js",
-  "unpkg": "dist/main.umd.js",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle --compress false",
     "dev": "microbundle watch"
   },
   "version": "0.0.1",
+  "bin": "dist/main.module.js",
+  "main": "dist/main.module.js",
   "description": "Tiny library to put your console.logs in a toast!",
   "keywords": [
     "console.log",
