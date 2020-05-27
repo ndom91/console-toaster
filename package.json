@@ -49,5 +49,11 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "localforage": "^1.7.3",
+    "react-tiny-popover": "^5.0.1",
+    "styled-components": "^5.1.1",
+    "toastify-js": "^1.7.0"
+  }
 }

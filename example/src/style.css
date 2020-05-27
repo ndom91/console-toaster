@@ -1,0 +1,25 @@
+button {
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #eaeaea;
+  background-color: #fff;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.15);
+  transition: transform 250ms ease-in-out;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

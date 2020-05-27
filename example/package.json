@@ -1,7 +1,7 @@
 {
   "name": "console-toaster-example",
   "homepage": "https://ndom91.github.io/console-toaster",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",
