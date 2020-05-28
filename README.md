@@ -24,13 +24,12 @@ import Container from 'rest-of-app'
 import Toaster from 'console-toaster'
 
 const App = props => {
-  render() {
-    return (
-      <div>
-        <Toaster />
-        <Container />
-      </div>
-  }
+  return (
+    <div>
+      <Toaster />
+      <Container />
+    </div>
+  )
 }
 ```
 
