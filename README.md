@@ -36,11 +36,11 @@ const App = props => {
 
 This will get you a little heads up menu on the left, and your `console.log()` and `console.error()` calls in toast messages along the right. Don't worry, they'll still show up in your console as well.
 
-![Screenshot1](https://i.imgur.com/3J11pp3.png)
+![Screenshot1](https://i.imgur.com/V4LplsT.png)
 
 Clicking on either `log` or `error` will display the latest log entries
 
-![Screenshot2](https://i.imgur.com/w7gJvGi.png)
+![Screenshot2](https://i.imgur.com/JcV0p55.png)
 
 ## 🗄 Props
 

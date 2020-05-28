@@ -34,8 +34,14 @@ const Toaster = ({
         }).showToast()
         setLogCount(prevCount => prevCount + 1)
         const newLogInfo = logInfo
-        newLogInfo.push({ body: args, count: 1, date: new Date(Date.now()).toISOString() })
-        setLogInfo(newLogInfo)
+        if (logInfo.find(log => log.body === args)) {
+          const i = logInfo.findIndex(log => log.body === args)
+          newLogInfo[i].count++
+          setLogInfo(newLogInfo)
+        } else {
+          newLogInfo.push({ body: args, count: 1, date: new Date(Date.now()).toISOString() })
+          setLogInfo(newLogInfo)
+        }
       }
       console.error = args => {
         Toastify({
