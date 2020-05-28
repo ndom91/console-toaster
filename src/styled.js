@@ -1,44 +1,52 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   left: 20px;
   bottom: 20px;
   display: flex;
   justify-content: space-around;
-  width: 200px;
+  width: 280px;
 `
 
 export const Badge = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  border-radius: 50%;
-  top: -25px;
-  right: -25px;
-  width: 32px;
+  margin-left: 4px;
+  width: 28px;
   height: 32px;
   color: #fff;
-
-  &.log {
-    background-color: #b9b9b9;
-  }
-
-  &.error {
-    background-color: #ff4242;
-  }
 `
 
 export const Console = styled.div`
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   border-radius: 5px;
-  border: 2px solid #eaeaea;
-  padding: 10px;
+  padding: 5px;
+  color: #fff;
   
   &:hover {
     cursor: pointer;
+  }
+
+  &.log {
+    background-color: #b9b9b9;
+    border: 2px solid #9c9c9c;
+  }
+
+  &.error {
+    background-color: #ff4242;
+    border: 2px solid #8c3333;
+  }
+  &.clear {
+    border-radius: 50%;
+    background-color: #656565;
+    border: 2px solid #484848;
+    width: 30px;
   }
 `
 
@@ -59,4 +67,20 @@ export const PopoverItem = styled.div`
   color: #000;
   z-index: 1000;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`
+
+export const PopoverCount = styled.div`
+  border-radius: 50%;
+  background-color: #b9b9b9;
+  width: 12px;
+  padding: 8px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+`
+export const PopoverInfo = styled.div`
+  font-size: 1.2em;
 `

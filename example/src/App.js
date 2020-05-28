@@ -7,7 +7,7 @@ const App = () => {
   const randomLogger = () => {
     const i = Math.random()
     if (i < 0.5) {
-      console.log(`Log ${i}`)
+      console.log(`Log`)
       setAction('log')
     } else if (i > 0.5) {
       console.error('Error!')
